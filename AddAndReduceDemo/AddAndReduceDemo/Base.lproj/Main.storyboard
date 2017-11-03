@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ob-bu-AJ3">
+                                <rect key="frame" x="100" y="417" width="175" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Do3-HV-Dsu"/>
+                                </constraints>
+                                <state key="normal" title="加分"/>
+                                <connections>
+                                    <action selector="reduce:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Y2O-c9-4fu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3T-v8-RCT">
+                                <rect key="frame" x="100" y="517" width="175" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Uzi-aC-QRD"/>
+                                </constraints>
+                                <state key="normal" title="减分"/>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Td4-gL-2oE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ctL-Cn-1Vw">
+                                <rect key="frame" x="334" y="120" width="31" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="SMT-Wf-kcH"/>
+                                </constraints>
+                                <state key="normal" title="设置"/>
+                                <connections>
+                                    <action selector="set:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rWl-Cy-Ixm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.32156862749999998" blue="0.2156862745" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="P3T-v8-RCT" secondAttribute="trailing" constant="100" id="0ds-3s-hev"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ctL-Cn-1Vw" secondAttribute="trailing" constant="10" id="7Ml-nl-1v3"/>
+                            <constraint firstItem="P3T-v8-RCT" firstAttribute="top" secondItem="4Ob-bu-AJ3" secondAttribute="bottom" constant="50" id="Gsi-GU-BWy"/>
+                            <constraint firstItem="ctL-Cn-1Vw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" symbolic="YES" id="IgM-ig-nDI"/>
+                            <constraint firstItem="4Ob-bu-AJ3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="Uqm-W1-JIs"/>
+                            <constraint firstItem="ctL-Cn-1Vw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="XoE-g5-3me"/>
+                            <constraint firstItem="P3T-v8-RCT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="100" id="ZCm-2z-SCP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="P3T-v8-RCT" secondAttribute="bottom" constant="100" id="szO-bO-jsv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4Ob-bu-AJ3" secondAttribute="trailing" constant="100" id="tgM-Hc-ZrD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="addBtn" destination="4Ob-bu-AJ3" id="lgt-y1-bmT"/>
+                        <outlet property="reducebtn" destination="P3T-v8-RCT" id="uYz-d0-21n"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
